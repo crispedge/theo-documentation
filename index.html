@@ -11,8 +11,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/default.css" rel="stylesheet">
-    <link href="css/xcode.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,7 +21,7 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,7 +38,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
+                    <li><a href="#gettingstarted">Getting Started</a>
                     </li>
                     <li><a href="#">Link</a>
                     </li>
@@ -51,35 +49,79 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
 
-    <div class="container">
+
+    <div class="container-fluid">
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                </p>
+            <!--Nav Bar -->
+            <nav class="col-xs-2 bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    <li>
+                        <a href="#GroupA">Group A</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupASub1">Sub-Group 1</a>
+                            </li>
+                            <li><a href="#GroupASub2">Sub-Group 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#GroupB">Group B</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupBSub1">Sub-Group 1</a>
+                            </li>
+                            <li><a href="#GroupBSub2">Sub-Group 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#GroupC">Group C</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#GroupCSub1">Sub-Group 1</a>
+                            </li>
+                            <li><a href="#GroupCSub2">Sub-Group 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-xs-10 col-lg-10">
+                <div class="jumbotron">
+                    <div class="container-fluid">
+                    <h1>Hello, world!</h1>
+                        <p>...</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <section id="GroupA" class="group">
+                    <h3>Group A</h3>
+                    <div id="GroupASub1" class="subgroup">
+                        <h4>Group A Sub 1</h4>
+                    </div>
+                    <div id="GroupASub2" class="subgroup">
+                        <h4>Group A Sub 2</h4>
+                    </div>
+                </section>
+                <section id="GroupB" class="group">
+                    <h3>Group B</h3>
+                    <div id="GroupBSub1" class="subgroup">
+                        <h4>Group B Sub 1</h4>
+                    </div>
+                    <div id="GroupBSub2" class="subgroup">
+                        <h4>Group B Sub 2</h4>
+                    </div>
+                </section>
+                <section id="GroupC" class="group">
+                    <h3>Group C</h3>
+                    <div id="GroupCSub1" class="subgroup">
+                        <h4>Group C Sub 1</h4>
+                    </div>
+                    <div id="GroupCSub2" class="subgroup">
+                        <h4>Group C Sub 2</h4>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -96,12 +138,28 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/highlight.pack.js"></script>
+    <script src="js/jquery.plugin.js"></script>
     <script>
         $(document).ready(function () {
             $('pre code').each(function (i, block) {
                 hljs.highlightBlock(block);
             });
         });
+
+        $('body').scrollspy({
+            target: '.bs-docs-sidebar',
+            offset: 40
+        });
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        //        $(function () {
+        //            $('a.page-scroll').on('click', function (event) {
+        //                var $anchor = $(this);
+        //                $('html, body').stop().animate({
+        //                    scrollTop: $($anchor.attr('href')).offset().top
+        //                }, 1500, 'easeInOutExpo');
+        //                event.preventDefault();
+        //            });
+        //        });
     </script>
 </body>
 
